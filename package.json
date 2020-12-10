@@ -1,0 +1,19 @@
+{
+  "name": "todolistcli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "run-todo": "./bin/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "lowdb": "^1.0.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
