@@ -52,7 +52,11 @@ const newTodo = () => {
 const getTodos = () => {
   const todos = db.get("todos").value();
   todos.forEach((todo, index) => {
-    console.log(`${index + 1}. ${todo.title} `);
+    let parsedTodo = `${index + 1}. ${todo.title}`;
+
+    if (todo.completed) parsedTodo += " ✔️";
+
+    console.log(chalk.strikethrough(parsedTodo));
   });
 };
 
@@ -74,7 +78,7 @@ const completeTodo = () => {
     return;
   }
 
-  db.set(`todos[${n - 1}].complete`, true).write();
+  db.set(`todos[${n - 1}].completed`, true).write();
 
   console.log(chalk.green("Todo marked as completed..."));
 };

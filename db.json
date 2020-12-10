@@ -1,21 +1,15 @@
 {
   "todos": [
     {
-      "title": "Hola",
-      "completed": false
+      "title": "PFIII",
+      "completed": true
+    },
+    {
+      "title": "Study",
+      "completed": true
     },
     {
       "title": "Sleep",
-      "completed": false,
-      "complete": true
-    },
-    {
-      "title": "Study Node",
-      "completed": false,
-      "complete": true
-    },
-    {
-      "title": "Study Node.js",
       "completed": false
     }
   ]
