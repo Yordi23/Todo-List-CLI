@@ -1,7 +1,7 @@
 const chalk = require("chalk");
 const prompt = require("prompt-sync")();
 
-//This is for storing data in a json file
+//This is for saving data in a json file
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
 
@@ -11,7 +11,6 @@ db.defaults({ todos: [] }).write();
 //-----------------------------------------
 
 const args = process.argv;
-const commands = ["new", "get", "complete", "help"];
 
 const showInstructions = () => {
   const usageText = `
